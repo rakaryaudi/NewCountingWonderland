@@ -4,5 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
-  m_configObjects: {}
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Counting Wonderland.unity
+    guid: 10826f6a1b616aa47bf7ab6e9dea6db2
+  - enabled: 1
+    path: Assets/Scenes/Landing Page.unity
+    guid: 1fe5967784a3bf745b6d0de8b866ada0
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: f2264cee6b6588e4aa7cd5a8a03fd157, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 15850d51788f115418989b9e2323216b, type: 2}

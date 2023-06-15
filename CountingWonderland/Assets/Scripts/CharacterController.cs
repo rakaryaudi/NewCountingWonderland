@@ -13,6 +13,7 @@ public class CharacterController : MonoBehaviour
     public GameObject answers, gameOver, finish;
     int score = 0;
     List<string> answeredQuestions = new List<string>();
+    public AudioSource audioSource;
 
 
     private void Start() {
@@ -34,6 +35,7 @@ public class CharacterController : MonoBehaviour
             } else {
                 gameOver.SetActive(true);
                 Time.timeScale = 0;
+                audioSource.Stop();
             }
             for (int i=0; i<obj.transform.parent.childCount; i++) {
                 obj.transform.parent.GetChild(i).GetComponent<BoxCollider>().enabled = false;
